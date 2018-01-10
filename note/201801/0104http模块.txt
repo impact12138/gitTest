@@ -1,0 +1,16 @@
+http模块，创建后台服务器：
+1、引入http模块；
+2、http.createServer(function(request,response){
+	console.log("request goning");//控制台回执
+	response.end("haha");//浏览器回执
+}).listen(3300);//监听
+3、运行看结果；
+读取一个文件传输给页面：
+var http = require("http");
+var fs= require("fs");
+http.createServer(function(request,response){
+    fs.readFile("./a.txt","utf-8",function(err,data){
+        if(err) throw err;
+        response.end(data);
+    });
+}).listen(3300);

@@ -1,0 +1,19 @@
+将独立功能的js代码模块化：                             为什么要编写两个方法？
+1、编写模块并暴露接口；module01.js
+2、使用接口；test.js
+3、运行看效果；module01-fn01
+多个模块的引用：
+1、编写module02；方法一致
+2、使用多个接口；test.js
+3、运行看效果；    //暴露接口的两个方法
+fs文件操作模块：
+引入node内置模块fs；
+读取文件，console.log(err,data);            注意文件命名，a.txt只命名为a
+if(err) throw err;
+写入文件fs.writeFile  /   追加写入fs.appendFile   /  删除文件fs.unlink
+创建文件fs.mkdir   /    修改文件名/文件夹名fs.rename
+
+var fs=require("fs");//node 内置模块可直接引用
+fs.命令("文件名",function(err){
+   if(err) throw err;
+})

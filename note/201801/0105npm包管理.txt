@@ -1,0 +1,8 @@
+npm作用：
+下载别人的第三方包到本地如：jquery
+安装别人的命令行程序到本地  express-generator
+创建一个项目   express exTest 
+进入项目目录   cd exTest
+安装项目依赖模块  npm install
+运行项目  npm start
+输入localhost:3000访问-------------成功

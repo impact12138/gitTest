@@ -1,0 +1,37 @@
+复习HTML内容
+Hyper text markup language
+
+<!--...-->,<hr />,<br /><sub>下标字，<del>删除字
+<a href="#" target="_blank"><img src="url" /></a> 
+<head><base href="url" target="_blank"></head>为本页设置默认链接地址
+<head><link rel="stylesheet" type="text/css" href="url"></head>
+<meta http-equiv="refresh" content="30" />每隔30秒刷新当前页面。
+<style type="text/css">
+body{
+font-size:14px;
+}
+.top{
+margin:15px;
+}
+#mid{
+border:1px solid #000000;
+}
+</style>
+<img src="url" alt="图片名称">
+<table>
+ <tr><th></th></tr>
+ <tr><td></td></tr>
+</table>
+<dl>
+ <dt></dt>
+ <dd></dd>
+</dl>
+块级元素：<div><p><h1><ul><table>
+内联元素：<span><a><img><b><td><button>
+<form>
+ <label><input type="text/password/checkbox/radio/sumbit" value="显示">名称</label>
+</form>
+<select><option>下拉列表</option></select>
+&nbsp;空格&quot;引号
+
+

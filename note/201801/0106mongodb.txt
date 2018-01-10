@@ -1,0 +1,28 @@
+下载并配置环境变量
+启动mongo
+启动mongod
+show dbs 显示当前的数据库
+use 数据名切换或者创建新数据库
+db.createCollection("表名字")向数据库里添加表，例：t1//表1
+show tables显示数据库下的表
+db.表名.drop()用来从数据库中删除一个表
+db.dropDatabase()删除当前正在使用的数据库
+db  确认
+db.t1.insert({  })插入一条数据
+db.t1.find()查看数据//查找全部添加数据
+db.t1.find({name:""})查找name为""的数据
+修改数据 update({修改的条件},{修改器:{修改内容}},
+第三个参数，第四个参数)
+修改器: $set 修改    $unset删除字段     $inc相当于“+=”
+Mongo中支持使用js代码，包括申明变量、循环等等
+查询JSON //支持高级筛选方式
+$lt小于<  $gt大于>   $gte大于等于>=    $lte小于等于<=
+mongoexport导出//可以把一个collection导出成JSON格式或者CSV格式的
+文件
+mongoexport -d dbname -c collectionname -o file --type json/csv
+-f field
+-d :数据库名
+-c :collection名
+-o :输出的文件名
+-type :输出的格式，默认为json
+-f :输出的字段，如果-type为csv，则需要加上-f"字段名"

@@ -1,0 +1,25 @@
+git只是代码的版本管理工具
+git监听：工作区、暂存区、版本库；
+工作区：对文件的修改都属于工作区，使用git status查看修改状态
+暂存区：通过git add .添加的状态，添加到暂存区的文件可以撤销也可以交到版
+本库；
+git commit -m "a"将修改提交到版本库
+版本库：最后存放点，在git内部会对每个版本库存一个状态（git只是存了变化的
+地方，而非备份整个文件）
+git log 查看版本id
+git reset --hard 版本号  //退回某个版本
+git checkout -- 文件名 //撤销修改
+
+PUSH项目到github网站
+在git-hub上建立仓库
+git push -u origin master
+ssh-keygen -t rsa -C 邮箱地址
+.ssh文件夹/复制pub文件内容
+settings--SSH and GPG keys--New SSH key
+git remote add origin 仓库地址
+git push -u origin master
+
+通过git下载别人项目
+右键git bash here
+git init
+git pull 项目网址

@@ -1,0 +1,20 @@
+CSS层叠样式表（Cascading Style Sheets)
+外部样式表<head><link rel="stylesheet" type="text/css" href=" " /></head>
+内部样式表<head><style type="text/css"></head>
+background-image:url(" ");插入背景图片，默认铺满；
+background-repeat:repeat-x/repeat-y平铺；/no-repeat;
+background-position:top right bottom left center;
+text-decoration:none;文本修饰（a链接） text-indent:50px; 首行缩进；
+word/letter-spacing:30px; 字/字母间距  line-height:行高；
+vertical/text -align：middle/center;   垂直/水平居中；
+font-family/weight/size;  字体/粗细/大小；
+a:link{}a:visited{}a:hover{}a:active{}伪类
+list-style-type:none
+margin/border/padding/content外边距/边框/填充/元素
+border:width style color;   outline轮廓/外边框  出现或消失不影响文档流
+display:none/visibility:hidden;隐藏元素  display:inline/block;内联/块级元素转换；
+position:static/fixed/absolute/relative;  z-index:-1/1;堆叠顺序
+fixed相对浏览器是固定位置；static静态定位但不受left/right/bottom/top的影响；
+relative相对其正常位置； absolute相对于最近的 已定位 的父元素，如果没有已定位的则它的位置相对于<html>
+:first-child选择任意元素的第一个子元素；  :before/after在每个HTML元素之前/之后插入内容；
+opacity:0-1透明度;

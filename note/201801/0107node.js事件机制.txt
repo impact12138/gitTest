@@ -1,0 +1,29 @@
+异步的多个代码执行顺序？
+引用fs模块
+fs.readFile读取文件
+fs.readFile("文件名","utf-8",function(err,data){
+	if(err) throw err;
+	console.log(data);
+});
+setTimeout(function(){
+	console.log("定时器打印！");
+});   //定时输出字符串，增加定时器的触发时间打印顺序会改变；
+
+回调函数
+回调函数就是将一个函数作为另一个函数的参数传入，作为另一个函数内部执行
+的函数
+
+异步IO操作
+/分步读取文件：
+引用fs模块，声明data变量来存读取的数据
+var rs = fs.createReadStream("文件名”）；
+rs.setEncoding("utf-8");
+
+rs.on("data",function(chunc){
+    data += chunc;       //将读取的数据拼接到data上。
+    console.log("..."); //读的过程中，我们打印三个点。
+});
+
+rs.on("end",function(){
+    console.log("没有数据了")
+});
