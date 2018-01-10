@@ -1,0 +1,141 @@
+body{
+    max-width:640px;
+    min-width:320px;
+    min-height:100%;
+    font-size:14px;
+    font-weight:bold;
+    margin:0 auto;
+    padding:0;
+    color:#686868;
+    text-align: center;
+    background:#ffb400;
+}
+.container{
+    width:100%;
+    margin:0 auto;
+    text-align: center;
+
+}
+.top img{width:100%;}
+.second{
+    width:90%;
+    background:#fff;
+    border:1px solid #fff;
+    border-radius:5px;
+    margin:0 auto;
+}
+.second img{
+    width:7%;
+    height:7%;
+    margin-top:4%;
+}
+.second span{
+    color:#a1a1a1;
+}
+.org{color:#db8258;}
+.second p{
+    margin-top:0;
+    color:#686868;
+}
+.third{
+    width:90%;
+    margin:3% auto;
+    background:#fff;
+    border-radius:5px;
+    text-align:left;
+}
+.thirdone{
+    width:90%;
+    margin:0 auto;
+}
+.third img{
+    width:70%;
+    height: 15%;
+    margin-left:-1.5%;
+    padding-top:3%;
+}
+hr{opacity:0.3;}
+.third2 span{
+    width:40%;
+    margin-right:20%;
+}
+.third3,.third4{
+    display:inline-block;
+    width:30%;
+    float:left;
+}
+.third4{margin-top:2%;}
+.org2{
+    color:#ec7d00;
+    font-size:18px;
+}
+.preyone{color:#a1a1a1;}
+button{
+    color:#fff;
+    background:#fe9e16;
+    border-radius:3.5px;
+    border:1px solid #ff9500;
+    width:35%;
+    height:35px;
+    margin-left:5%;
+}
+.hr1{
+    opacity:0;
+    padding-bottom:5%;
+}
+.fouth{
+    width:90%;
+    margin:0 auto;
+    background:#fff;
+    border-radius:5px;
+    text-align:left;
+}
+.kuang2{
+    width:70%;
+    height: 15%;
+    margin-left:-1.5%;
+    padding-top:3%;
+}
+.fouth1 img{
+    width:25%;
+    float:left;
+    margin-left:5%;
+    margin-bottom:9%;
+}
+.fouth1{
+    display:inline-block;
+    width:100%;
+    padding:3% 0;
+}
+.fouth1 div{width:100%;}
+.p1{
+    font-size:17px;
+    line-height:5px;
+}
+.p2{
+    color:#a1a1a1;
+    line-height:12px;
+    margin-bottom:1%;
+}
+.p3{
+    font-size:4px;
+    color:#bebebe;
+    line-height:12px;
+    margin-top:0;
+}
+.fouth2{
+    text-align:center;
+    font-size:18px;
+    padding-bottom:8%;
+}
+.fouth2 p{margin:0;}
+.fifth{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+.fifth img{
+    margin-top:7%;
+    margin-bottom:10%;
+    width:60%;
+}

@@ -1,0 +1,76 @@
+body{
+    max-width:640px;
+    min-width:320px;
+    font-size:12px;
+    text-align: center;
+    min-height:100%;
+    margin:0 auto;
+    padding:0;
+    background-color:#fdf7df;
+    color:#c0903b;
+    font-weight:bold;
+}
+.container{
+    width:100%;
+    text-align: center;
+    margin:0 auto;
+    padding:0;
+}
+.top{margin-bottom:-4px;}
+.top img{width:100%;}
+.second{margin-bottom:-4px;}
+.second img{width:100%;}
+.third img{width:100%;}
+.fouth{
+    background-image:url(./360pic/fouth.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+h2{
+    line-height: 25px;
+    margin-top:0;
+    color:#fdf7df;
+    padding:2% 0;
+    background:url(./360pic/bgkuang.jpg) center center no-repeat;
+    background-size:70% 100%;
+}
+span{
+    font-size:15px;
+    font-weight:bolder;
+}
+.sth{
+    line-height:25px;
+    margin-right:3%;
+}
+.kuang{
+    width:53%;
+    background-color:#fdf7df;
+    border:1px solid #c0903b;
+    margin-right:7%;
+}
+.upload{
+    width:25%;
+    margin:2% 14% 4% 0%;
+    background-color:#f78223;
+    border:1px solid #F9A209;
+    border-radius:3px;
+    font-weight:bolder;
+    color:#fff;
+}
+.botm{
+    width:100%;
+    background:url(./360pic/botm.jpg);
+    height:60px;
+}
+button{
+    width:30%;
+    background-color:#ffeb00;
+    border:1px solid #fae304;
+    color:#a96500;
+    font-weight:bolder;
+    padding:0;
+    margin-top:5%;
+    font-size:12px;
+    box-shadow:2px 2px 3px;
+    border-radius:3px;
+}

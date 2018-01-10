@@ -1,0 +1,70 @@
+body{
+    background:#d38941;
+    color:#ffffff;
+    font-size:14px;
+    max-width:640px;
+    min-width:320px;
+    min-height:100%;
+    margin:0 auto;
+    padding:0;
+}
+.container{
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+}
+h2{
+    background:url(./pic/kuang.png) center center  no-repeat;
+    background-size:270px 50px;
+    line-height: 64px;
+    font-size:15px;
+    margin:0;
+    padding:0;
+}
+p{
+    text-align: center;
+    line-height:11px;
+}
+img{
+    text-align:center;
+}
+.top{
+    width:100%;
+    margin-bottom:-2%;
+}
+.top img{width:100%;}
+ul{
+    margin:0 auto;
+    padding:2% 9%;
+}
+ul li{
+    list-style:none;
+    display:inline-block;
+    width:50%;
+    padding:0;
+    margin-right:-3px;
+}
+ul li p{margin:10px auto;}
+.second{
+    width:100%;
+    padding-top:15px;
+    background-image:url(./pic/bg1.jpg);
+    background-repeat:no-repeat;
+}
+.licai{
+    width:55%;
+    height:70%;
+}
+.third{
+    width:100%; 
+    padding-top:20px;
+    padding-bottom:30px;
+    background-image: url(./pic/bg2.jpg);
+}
+.fouth{
+    width:100%;
+    padding-top:20px;
+    padding-bottom:30px;
+    background-image: url(./pic/bg3.jpg);
+}
