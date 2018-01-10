@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset:utf-8" />
+		<style type="text/css">
+			#divv{
+				width:198px;
+			 	height:66px;
+			 	padding:10px;
+			 	border:1px solid #aaaaaa;
+			 }
+			 #dragg{
+				width:150px;
+				height:50px;
+			 }
+		</style>
+		<script type="text/javascript">
+			function allowDrop(ev){
+				ev.preventDefault();
+				}
+
+				function drag(ev){
+				ev.dataTransfer.setData("Text",ev.target.id);
+				}
+
+				function drop(ev){
+				ev.preventDefault();
+				var data=ev.dataTransfer.getData("Text");
+				ev.target.appendChild(document.getElementById(data));
+				}
+			
+		</script>
+
+	</head>
+	<body>
+		<p>拖入框中</p>
+		<div id="divv" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<img src="baidunews.jpg" id="dragg" draggable="true" ondragstart="drag(event)" />
+	</body>
+</html>

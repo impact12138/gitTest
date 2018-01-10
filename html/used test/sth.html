@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset:utf-8" />
+        <style type="text/css">
+            .godfather{
+                border:1px solid gray;
+                border-radius:10px;
+                width:1000px;
+                text-align:center;
+                margin:0 auto;
+            }
+            .hello{
+                border:1px solid gray;
+                width:200px;
+                text-shadow:3px 3px 3px #FF00FF;
+                border-radius:30px;
+                text-align:center;
+                position:relative;
+                animation:textplay 8s linear infinite alternate ;
+            }
+            @keyframes textplay{
+                0%{left:0px;}
+                25%{left:250px;}
+                50%{left:500px;}
+                75%{left:750px;}
+                100%{left:1000px;}
+            }
+            body{
+                animation:firstplay 8s both infinite alternate;
+            }
+            @keyframes firstplay{
+                from{background:red;}
+                to{background:yellow;}
+            }
+            .photo{
+                width:88px;
+                height:88px;
+                position:relative;
+                left:200px;
+                animation:carry 8s linear infinite;
+            }
+            @keyframes carry{
+                0%{left:200px; top:0px;}
+                25%{left:600px; top:0px;}
+                50%{left:600px; top:400px;}
+                75%{left:200px; top:400px;}
+                100%{left:200px; top:0px;}
+            }
+            .photo2{
+                width:88px;
+                height:88px;
+                position:relative;
+                left:200px;
+                top:100px;
+                animation:carryout 8s linear infinite alternate;
+            }
+            @keyframes carryout{
+                0%{left:200px; top:100px;}
+                25%{left:400px; top:100px;}
+                50%{left:400px; top:300px;}
+                75%{left:200px; top:300px;}
+                100%{left:200px; top:100px;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="godfather">Woman and children can be careless,but not men</h1>
+        <p class="hello">Dont be Mr.tree</p>
+        <img class="photo" src="../pic/4.jpg">
+        <img class="photo2" src="../pic/6.jpg">
+    </body>
+</html>

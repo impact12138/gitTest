@@ -1,0 +1,74 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text-html;charset:utf-8" />
+        <style type="text/css">
+        </style>
+    </head>
+    <body onload="startTime()">
+        <h1 id="anniu">这是一个标题</h1>
+<!--事件发生改变内容-->
+        <h2 onclick="this.innerHTML='Oops!'">这是一个标题</h2>
+        <button onclick="myFunction()">press it!</button>
+        <button onclick="displayDate()">null</button>
+<!--显示时间的小程序-->
+        <script type="text/javascript">
+            document.write(Date());
+        </script>
+        <script>
+            function displayDate(){
+                document.write(Date());
+            }
+        </script>
+<!--改变html样式-->
+        <script type="text/javascript">
+            function myFunction(){
+                document.getElementById("anniu").style.color= "red";
+            }
+        </script>
+<!--改变输入框文本样式-->
+        <input type="text" id="fname" onchange="myfunction()">
+        <script>
+            function myfunction(){
+                var x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+<!--mOvermOut-->
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)">where there is a will</div>
+        <script>
+            function mOver(obj){
+                obj.innerHTML="there is a way";
+            }
+            function mOut(obj){
+                obj.innerHTML="where there is a will";
+            }
+        </script>
+        <script>
+//计算字符长度
+        var txt="what the hell is wrong with you f*cking people"
+        document.write(txt.length+"<br/>");
+        var n=txt.indexOf("is");
+        document.write(n);
+        </script>
+        <script type="text/javascript">
+//时间动态显示
+            function startTime(){
+                var today=new Date();
+                var h=today.getHours();
+                var m=today.getMinutes();
+                var s=today.getSeconds();
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById("nowtime").innerHTML=+h+":"+m+":"+s;
+                t=setTimeout(startTime,1000);
+            }
+            function checkTime(i){
+                if(i<10)
+                {i="0"+i}
+                return i
+            }
+        </script>
+        <p id="nowtime"></p>
+    </body>
+</html>

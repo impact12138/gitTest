@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset:utf-8" />
+    <style type="text/css">
+        .wkuang{
+            width:330px;
+            height:370px;
+            border:2px solid #6ea9b8;
+            margin:0 auto;
+        }
+        .screen{
+            width:300px;
+            height:40px;
+            border:2px solid #6ea9b8;
+            margin:14px;
+            font-size:30px;
+            line-height: 40px;
+            color:gray;
+        }
+        .anniu{
+            width:300px;
+            height:280px;
+            border:1px solid #6ea9b8;
+            margin:0px 14px 14px 14px;
+        }
+        .left{
+            width:190px;
+            height:280px;
+            display:inline-block;
+        }
+        .number{
+            width:190px;
+            height:40px;
+            margin:10px 0px 6px 10px;
+            padding-bottom:15px;
+            display:inline;
+            float:left;
+        }
+        .numb{
+            width:50px;
+            height:55px;
+            margin:5px;
+            display:inline;
+            float:left;
+            border:1px solid #6ea9b8;
+            background:#9cd0dd;
+        }
+        .Zero{
+            display:inline;
+            width:170px;
+            height:40px;
+        }
+        .zero{
+            width:170px;
+            height:40px;
+            margin:8px 0px 8px 15px;
+            display:inline;
+            float:left;
+            border:1px solid #6ea9b8;
+            background:#9cd0dd;
+        }
+        .yunsuan{
+            width:100px;
+            height:280px;
+            display:inline;
+            float:right;
+        }
+        .divide{
+            width:45px;
+            height:55px;
+            margin:15px 0px 0px 0px;
+            border:1px solid #6ea9b8;
+            background:#5fd568;
+        }
+        .time{
+            width:45px;
+            height:55px;
+            margin:15px 0px 15px 0px;
+            border:1px solid #6ea9b8;
+            background:#5fd568;
+        }
+        .minus{
+            width:45px;
+            height:55px;
+            margin:1px 5px 15px 0px;
+            display:inline;
+            float:left;
+            border:1px solid #6ea9b8;
+            background:#5fd568;
+        }
+        .equal{
+            width:45px;
+            height:104px;
+            display:inline-block;
+            border:1px solid #6ea9b8;
+            background:#f86d21;
+        }
+        .plus{
+            width:45px;
+            height:175px;
+            margin:1px 5px 0px 0px;
+            display:inline;
+            float:right;
+            border:1px solid #6ea9b8;
+            background:#5fd568;
+        }
+    </style>
+</head>
+<body>
+    <div class="wkuang">
+        <input type="text" class="screen" id="screen">
+        <div class="anniu">
+            <div class="left">
+                <div class="number">
+                    <input type="button" id="nine" value="9" class="numb">
+                    <input type="button" id="eight" value="8" class="numb">
+                    <input type="button" id="seven" value="7" class="numb">
+                </div>
+                <div class="number">
+                    <input type="button" id="six" value="6" class="numb">
+                    <input type="button" id="five" value="5" class="numb">
+                    <input type="button" id="four" value="4" class="numb">
+                </div>
+                <div class="number">
+                    <input type="button" id="three" value="3" class="numb">
+                    <input type="button" id="two" value="2" class="numb">
+                    <input type="button" id="one" value="1" class="numb">
+                </div>
+                <div class="Zero"><input type="button" id="zero" value="0" class="zero"></div>
+            </div>
+            <div class="yunsuan">
+                <input type="button" id="divide" value="/" class="divide">
+                <input type="button" id="time" value="*" class="time">
+                <input type="button" id="minus" value="-" class="minus">
+                <input type="button" id="plus" value="+" class="plus">
+                <input type="button" id="equal" value="=" class="equal">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //定义大变量，全局变量
+        var number1="";
+        var option="";
+        var number2="";
+        var numberX="";
+        var result="";
+
+        //简单定义数字按钮
+        /*document.getElementById("nine").onclick=function(){
+            console.log("number1");
+            number1 += "9";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("eight").onclick=function(){
+            number1 += "8";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("seven").onclick=function(){
+            number1 += "7";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("six").onclick=function(){
+            number1 += "6";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("five").onclick=function(){
+            number1 += "5";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("four").onclick=function(){
+            number1 += "4";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("three").onclick=function(){
+            number1 += "3";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("two").onclick=function(){
+            number1 += "2";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("one").onclick=function(){
+            number1 += "1";
+            document.getElementById("screen").value = number1;
+        }
+        document.getElementById("zero").onclick=function(){
+            number1 += "0";
+            document.getElementById("screen").value = number1;
+        }*/
+        //定义运算符
+        document.getElementById("divide").onclick=function(){
+            option = "/";
+        }
+        document.getElementById("time").onclick=function(){
+            option = "*";
+        }
+        document.getElementById("minus").onclick=function(){
+            option = "-";
+        }
+        document.getElementById("plus").onclick=function(){
+            option = "+";
+        }
+        document.getElementById("equal").onclick = function(){
+            showResult();
+        }
+
+        // 第一步：先取得左侧运算数字，并存储在变量中       **
+        // 第二步：取得运算符，并存储在亦是中
+        // 第三步：...
+
+
+
+        // 组合计算公式，并运算出结果，将结果显示在显示框里面
+        function showResult(){
+            result = eval(number1 + option + number2 );
+            if(numberX!=""){
+                result= eval(result+option+numberX)
+            }
+            document.getElementById("screen").value = result;
+        }
+        // 绑定所有按钮事件
+        function bindEvent(id){
+            // debugger
+            document.getElementById(id).onclick = function(){
+                var value = this.value;
+                // debugger
+                if(option == ""){
+                    number1 += value;
+                    document.getElementById("screen").value = number1;
+                }else{
+                    number2 += value;
+                    document.getElementById("screen").value = number2;
+                }
+                if(result!=""){
+                    numberX+=value;
+                    document.getElementById("screen").value=numberX;
+                }
+            }
+        }
+
+       /* bindEvent("nine");
+        bindEvent("eight");
+        bindEvent("seven");
+        bindEvent("six");
+        bindEvent("five");
+        bindEvent("four");
+        bindEvent("three");
+        bindEvent("two");
+        bindEvent("one");
+        bindEvent("zero");*/
+        //循环定义数字按钮
+        var numbers = document.getElementsByClassName('left')[0].getElementsByTagName('input');
+        for(var i=0; i<numbers.length; i++){
+            var nId = numbers[i].id;
+            bindEvent(nId);
+        }
+    </script>
+</body>
+</html>

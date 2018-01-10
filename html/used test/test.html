@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text-html;charset:utf-8" />
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script>
+            function myFunction() {
+                try{
+                    var x=document.getElementById("demo").value;
+                    if(x=="")      throw "值为空";
+                    if(isNaN(x))    throw "不是数字";
+                    if(x>10)        throw "值太大";
+                    if(x<2)         throw "值太小";
+                }catch(err){
+                    var y=document.getElementById("mistake");
+                    y.innerHTML="错误:"+ err+"。";
+                }
+            }
+        </script>
+        <h1>我的第一个js程序</h1>
+        <p>选择2到10之间的整数进行输入</p>
+        <input id="demo" type="text" placeholder="在此输入">
+        <button type="button" onclick="myFunction()">点击验证</button>
+        <p id="mistake"></p>
+    </body>
+</html>

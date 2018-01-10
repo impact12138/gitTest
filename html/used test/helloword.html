@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style type="text/css">
+            button{
+                position:relative;
+                width:80px;
+                height:35px;
+                background:#00BBFF;
+                color:white;
+                border:1px solid #00BBFF;
+                animation:press 3s linear infinite alternate;
+            }
+            @keyframes press{
+                0%{left:0px;}
+                100%{left:300px;}
+            }
+        </style>
+    </head>
+    <body>
+        <p>运算测试，假设x=8，y=x+2，y等于多少</p>
+        <button onclick="myfunction()">点击获取</button>
+        <p id="demo"></p>
+        <script>
+            function myfunction(){
+                var x=8;
+                var y=x+2;
+                var
+                anwser=document.getElementById("demo");
+                anwser.innerHTML="y="+y;
+            }
+        </script>
+    </body>
+</html>
+
