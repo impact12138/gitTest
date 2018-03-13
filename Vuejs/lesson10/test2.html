@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charse="utf-8">
+    <script src="vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <son @connect="say"></son>
+    </div>
+    <script>
+        Vue.component('son', {
+            template: `<button @click="send">
+                            点击
+                        </button>`,
+            data(){
+                return{
+                    msg:'大家好，我是子组件的数据'
+                }
+            },
+            methods: {
+                send() {
+                    this.$emit('connect',this.msg);//将子组件的data中的msg，通过$emit()一并发射出来
+                }
+            }
+        });
+        const app = new Vue({
+            el: "#app",
+            methods: {
+                say(msg) {    //在父组件的say()方法接收即可
+                    console.log(msg);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

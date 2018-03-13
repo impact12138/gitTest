@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            公众号：{{name}}
+        </div>
+        <script>
+            let vm = new Vue({
+                el:"#app",//关联指定的DOM节点
+                data:{
+                    name:"web前端教程",
+                }
+            });
+            //vm.name="hello world"
+        </script>
+    </body>
+</html>

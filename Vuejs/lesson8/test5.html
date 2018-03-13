@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script> 
+    </head>
+    <body>
+        <div id="app">
+            <input v-model="msg" type="text">
+            <p v-once>你输入:{{msg}}</p>
+        </div>
+        <script>
+            let vm = new Vue({//v-for 、 v-bind 、 v-on 、 v-model 、 v-once五个指令
+                el: "#app",
+                data:{
+                    msg:'hello world'
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p :class="[activeClass,errorClass]">这是文字</p><!--数组语法-->
+        </div>
+        <script>
+            let vm = new Vue({
+                el: "#app",
+                data:{
+                    activeClass:'active',
+                    errorClass:'error'
+                }
+            });
+        </script>
+    </body>
+</html>

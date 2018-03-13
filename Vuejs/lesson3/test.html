@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            我是{{name}},
+            今年{{age}}
+        </div>
+        <script>
+            let vm = new Vue({
+                el:"#app",//挂载元素
+                data:{
+                    name:"Kangkang",
+                    age:21
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <input v-model="number"><!--v-model双向绑定-->
+            <p>数字:{{number}}</p>
+        </div>
+        <script>
+            let vm = new Vue({
+                el:"#app",
+                data:{
+                    number:"",
+                }
+            });
+        </script>
+    </body>
+</html>

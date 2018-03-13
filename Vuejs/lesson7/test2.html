@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!--<p v-show="show1">我是true</p>v-show指令用于控制元素的display属性-->
+            <!--<p v-show="show2">我是false</p>-->
+            <!--<p v-if="if_1">我是true</p>
+            <p v-if="if_2">我是true</p>-->
+            <p v-if="if_1">我是true</p>
+            <p v-else>我是else</p><!--要求前一个兄弟节点必须要使用 v-if 指令-->
+        </div><!--如果需要频繁切换显示/隐藏的，就用 v-show ；如果运行后不太可能切换显示/隐藏的，就用 v-if-->
+        <script>
+            let vm = new Vue({//v-text 、 v-html 、 v-show 、 v-if 、 v-else
+                el: "#app",
+                data:{
+                    if_1:false
+                }
+            });
+        </script>
+    </body>
+</html>

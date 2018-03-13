@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf_8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <a :href="'http://'+host">hello官网</a><!--简单的字符拼接-->
+        </div>
+        <script>
+            let app = new Vue({
+                el: "#app",
+                data:{
+                    host:'hello.com'
+                }
+            });
+        </script>
+    </body>
+</html>

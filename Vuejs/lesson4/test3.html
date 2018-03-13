@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{a}}
+            <button v-on:click="plus">递增</button>
+        </div>
+        <script>
+            let vm = new Vue({
+                el: "#app",
+                data: {
+                    a:0
+                },
+                methods:{   //定义方法
+                    plus(){
+                        return this.a++;
+                    }
+                },
+                //观察
+                watch:{
+                    a(){
+                        console.log(`有变化了，最新值:`);
+                        console.log(this.a); //在控制台输出
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

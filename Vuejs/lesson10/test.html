@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <son :message="msg"></son>
+        </div>
+        <script>
+            Vue.component('son',{
+                props:['message'],//props声明了它要接受的参数是message 
+                template:`<div>{{message}}</div>`//完成了父组件向子组件的通信
+            });
+            const vm = new Vue({
+                el: "#app",
+                data:{
+                    msg:"我是父组件的数据"
+                }
+            });
+        </script>
+    </body>
+</html>

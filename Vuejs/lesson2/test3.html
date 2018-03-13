@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <card></card>
+            <card></card>
+            <card></card>
+        </div>
+        <script>
+            //注册一个名叫card的组件
+            Vue.component('card',{
+                template:`<div>
+                    <img src="logo.png" alt="">
+                    <h2>web前端教程</h2>
+                    <p>这里是描述，很长的描述</p>
+                    <button>我是按钮</button>
+                </div>`
+            });
+
+            new Vue({
+                el:"#app"
+            });
+        </script>
+    </body>
+</html>
